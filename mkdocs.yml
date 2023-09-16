@@ -531,12 +531,12 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
-    - navigation.top
-    - navigation.footer
-    - navigation.tracking
-    - search.highlight
-    - search.suggest
-    - toc.follow
+    # - navigation.top
+    # - navigation.footer
+    # - navigation.tracking
+    # - search.highlight
+    # - search.suggest
+    # - toc.follow
     - content.action.edit
   font:
     text: 'Fira Sans'
