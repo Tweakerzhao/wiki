@@ -587,9 +587,6 @@ markdown_extensions:
 
 plugins: 
   - search 
-  - social:
-      cards_layout_options:
-        font_family: Noto Sans SC
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
