@@ -1,6 +1,5 @@
 site_name: SCNU Wiki
 copyright: Copyright © 2023 SCNU Wiki Team
-
 repo_url: https://github.com/Tweakerzhao/wiki
 repo_name: Tweakerzhao/wiki
 edit_uri: 'https://wiki.cszhao.cn/edit-landing/?ref='
@@ -502,9 +501,9 @@ nav:
     - 线段树与离线询问: topic/segment-tree-offline.md
 
 theme:
-  # name: null
-  # custom_dir: 'mkdocs-material/material'
-  name: material
+  name: null
+  custom_dir: 'mkdocs-material/material'
+  # name: material
   language: 'zh'
   icon:
     repo: fontawesome/brands/git-alt
@@ -533,13 +532,13 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
-    - navigation.top
-    - navigation.footer
-    - navigation.tracking
-    - search.highlight
-    - search.suggest
-    - toc.follow
-    - content.action.edit
+    # - navigation.top
+    # - navigation.footer
+    # - navigation.tracking
+    # - search.highlight
+    # - search.suggest
+    # - toc.follow
+    # - content.action.edit
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
@@ -547,9 +546,8 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+# Extensions
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
   - admonition
   - def_list
   - footnotes
@@ -557,7 +555,8 @@ markdown_extensions:
   - toc:
       permalink: ""
       slugify: !!python/name:pymdownx.slugs.uslugify
-    
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
@@ -585,11 +584,11 @@ markdown_extensions:
       alternate_style: true
 
 
-plugins: 
-  - search 
-  - git-revision-date-localized:
-      type: timeago
-      enable_creation_date: true
+# plugins: 
+#   - search 
+#   - git-revision-date-localized:
+#       type: timeago
+#       enable_creation_date: true
 
 
 extra_javascript:
@@ -598,7 +597,11 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/analytics.js
 
-# plugins: []
+plugins: []
 
-# hooks:
-#   - hooks/on_env.py
+hooks:
+  - hooks/on_env.py
+
+
+extra:
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
