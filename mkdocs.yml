@@ -502,7 +502,9 @@ nav:
     - 线段树与离线询问: topic/segment-tree-offline.md
 
 theme:
-  name: material
+  name: null
+  custom_dir: 'mkdocs-material/material'
+  # name: material
   language: 'zh'
   icon:
     repo: fontawesome/brands/git-alt
@@ -583,14 +585,14 @@ markdown_extensions:
       alternate_style: true
 
 
-plugins: 
-  - search 
-  - social:
-      cards_layout_options:
-        font_family: Noto Sans SC
-  - git-revision-date-localized:
-      type: timeago
-      enable_creation_date: true
+# plugins: 
+#   - search 
+#   - social:
+#       cards_layout_options:
+#         font_family: Noto Sans SC
+#   - git-revision-date-localized:
+#       type: timeago
+#       enable_creation_date: true
 
 
 extra_javascript:
@@ -599,3 +601,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/analytics.js
 
+plugins: []
+
+hooks:
+  - hooks/on_env.py
