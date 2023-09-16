@@ -534,7 +534,6 @@ theme:
     - navigation.top
     - navigation.footer
     - navigation.tracking
-    - navigation.indexes
     - search.highlight
     - search.suggest
     - toc.follow
@@ -584,9 +583,9 @@ markdown_extensions:
       alternate_style: true
 
 
-plugins:
-  - search:
-      jieba_dict: dict.txt 
+plugins: 
+  - search 
+  - social
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
